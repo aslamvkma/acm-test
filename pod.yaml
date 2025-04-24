@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ubi-minimal
+  namespace: quay-enterprise
+spec:
+  containers:
+  - name: ubi-minimal
+    command: ["/bin/bash", "-c", "sleep 86400"]
+    image: registry.redhat.io/ubi9/ubi:latest
